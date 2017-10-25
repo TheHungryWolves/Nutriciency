@@ -15,11 +15,11 @@ public class Distributor
     private String country;
     private int frequencyOfPickUp;
     private String lastUpdatedBy;
-    private DateTime lastUpdated;
+    private String lastUpdated;
     private int isDeleted;
 
     public Distributor(String name, int phoneNumber, int officeNumber, String street, String city, String state, int zipcode,
-        String country, int frequencyOfPickUp, String lastUpdatedBy, DateTime lastUpdated, int isDeleted)
+        String country, int frequencyOfPickUp, String lastUpdatedBy, String lastUpdated, int isDeleted)
     {
         setName(name);
         setPhoneNumber(phoneNumber);
@@ -136,12 +136,12 @@ public class Distributor
         return this.lastUpdatedBy;
     }
 
-    public void setLastUpdated(DateTime lastUpdated)
+    public void setLastUpdated(String lastUpdated)
     {
         this.lastUpdated = lastUpdated;
     }
 
-    public DateTime getlastUpdated()
+    public String getlastUpdated()
     {
         return this.lastUpdated;
     }
