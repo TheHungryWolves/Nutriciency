@@ -35,7 +35,7 @@ public class User
         setIsDeleted(0);
         setApproved(0);
         setFoodBankID(0);
-        setLastUpdatedBy("Jorgensen");
+        setLastUpdatedBy("");
         setLastUpdated("");
     }
 
