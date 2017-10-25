@@ -16,11 +16,11 @@ public class Donor
     private int leadTime;
     private int frequencyOfDonations;
     private String lastUpdatedBy;
-    private DateTime lastUpdated;
+    private String lastUpdated;
     private int isDeleted;
 
     public Donor(String name, int phoneNumber, int officeNumber, String street, String city, String state, int zipcode,
-        String country, int leadTime, int frequencyOfDonation, String lastUpdatedBy, DateTime lastUpdated, int isDeleted)
+        String country, int leadTime, int frequencyOfDonation, String lastUpdatedBy, String lastUpdated, int isDeleted)
     {
         setName(name);
         setPhoneNumber(phoneNumber);
@@ -148,12 +148,12 @@ public class Donor
         return this.lastUpdatedBy;
     }
 
-    public void setLastUpdated(DateTime lastUpdated)
+    public void setLastUpdated(String lastUpdated)
     {
         this.lastUpdated = lastUpdated;
     }
 
-    public DateTime getlastUpdated()
+    public String getlastUpdated()
     {
         return this.lastUpdated;
     }
