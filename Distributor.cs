@@ -16,10 +16,10 @@ public class Distributor
     private int frequencyOfPickUp;
     private String lastUpdatedBy;
     private DateTime lastUpdated;
-    private bool isDeleted;
+    private int isDeleted;
 
     public Distributor(String name, int phoneNumber, int officeNumber, String street, String city, String state, int zipcode,
-        String country, int frequencyOfPickUp, String lastUpdatedBy, DateTime lastUpdated, bool isDeleted)
+        String country, int frequencyOfPickUp, String lastUpdatedBy, DateTime lastUpdated, int isDeleted)
     {
         setName(name);
         setPhoneNumber(phoneNumber);
@@ -146,12 +146,12 @@ public class Distributor
         return this.lastUpdated;
     }
 
-    public void setIsDeleted(bool isDeleted)
+    public void setIsDeleted(int isDeleted)
     {
         this.isDeleted = isDeleted;
     }
 
-    public bool getIsDeleted()
+    public int getIsDeleted()
     {
         return this.isDeleted;
     }
