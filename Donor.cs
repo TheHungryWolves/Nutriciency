@@ -17,10 +17,10 @@ public class Donor
     private int frequencyOfDonations;
     private String lastUpdatedBy;
     private DateTime lastUpdated;
-    private bool isDeleted;
+    private int isDeleted;
 
     public Donor(String name, int phoneNumber, int officeNumber, String street, String city, String state, int zipcode,
-        String country, int leadTime, int frequencyOfDonation, String lastUpdatedBy, DateTime lastUpdated, bool isDeleted)
+        String country, int leadTime, int frequencyOfDonation, String lastUpdatedBy, DateTime lastUpdated, int isDeleted)
     {
         setName(name);
         setPhoneNumber(phoneNumber);
@@ -158,12 +158,12 @@ public class Donor
         return this.lastUpdated;
     }
 
-    public void setIsDeleted(bool isDeleted)
+    public void setIsDeleted(int isDeleted)
     {
         this.isDeleted = isDeleted;
     }
 
-    public bool getIsDeleted()
+    public int getIsDeleted()
     {
         return this.isDeleted;
     }
