@@ -23,20 +23,5 @@ public partial class APImHavingFun : System.Web.UI.Page
         string response = client.makeRequest();
 
         Label1.Text = response;
-
-        //string url = ("https://api.nal.usda.gov/ndb/list?format=JSON&lt=f&sort=n&api_key=q8blQscG7a3EBdoUXqehUi2QEm5CZ0I23o6op2TB");
-
-        //httpVerb httpVerb = new
-        //    HttpClient client = new HttpClient();
-        //client.DefaultRequestHeaders.Add("Accept", "application/json");
-
-        //var jsonString = await client.GetStringAsync(zip);
-
-        //JToken token = JToken.Parse(jsonString);
-
-        //foreach (var item in token)
-        //{
-
-        //}
     }
 }
