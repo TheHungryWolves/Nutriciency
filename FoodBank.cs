@@ -14,11 +14,11 @@ public class FoodBank
     private int zipcode;
     private String country;
     private String lastUpdatedBy;
-    private DateTime lastUpdated;
-    private bool isDeleted;
+    private String lastUpdated;
+    private int isDeleted;
 
     public FoodBank(String name, int phoneNumber, int officeNumber, String street, String city, String state, int zipcode,
-        String country, String lastUpdatedBy, DateTime lastUpdated, bool isDeleted)
+        String country, String lastUpdatedBy, String lastUpdated, int isDeleted)
     {
         setName(name);
         setPhoneNumber(phoneNumber);
@@ -123,22 +123,22 @@ public class FoodBank
         return this.lastUpdatedBy;
     }
 
-    public void setLastUpdated(DateTime lastUpdated)
+    public void setLastUpdated(String lastUpdated)
     {
         this.lastUpdated = lastUpdated;
     }
 
-    public DateTime getlastUpdated()
+    public String getlastUpdated()
     {
         return this.lastUpdated;
     }
 
-    public void setIsDeleted(bool isDeleted)
+    public void setIsDeleted(int isDeleted)
     {
         this.isDeleted = isDeleted;
     }
 
-    public bool getIsDeleted()
+    public int getIsDeleted()
     {
         return this.isDeleted;
     }
